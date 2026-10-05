@@ -86,9 +86,7 @@ class SubscriptionScreen extends StatelessWidget {
                   backgroundColor: const Color(0xFFD0BCFF),
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                 ),
-                onPressed: () {
-                  // Mantaqda lacag bixinta
-                },
+                onPressed: () {},
                 child: const Text(
                   'Biloow 10-ka Maalmood ee Bilaashka ah',
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Colors.black),
