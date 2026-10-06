@@ -47,7 +47,7 @@ class SubscriptionScreen extends StatelessWidget {
             ),
             const SizedBox(height: 12),
             const Text(
-              'Ku raaxayso 10 maalmood oo tijaabo bilaash ah (Free Trial) ka hor intaanan billawgin $10/bishiiba.',
+              'Ku raaxayso 10 maalmood oo tijaabo bilaash ah (Free Trial) ka hor intaanan billawgin \$10/bishiiba.',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 15, color: Colors.grey),
             ),
@@ -67,7 +67,7 @@ class SubscriptionScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 8),
                   Text(
-                    '$10 / Bishiiba',
+                    '\$10 / Bishiiba',
                     style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold, color: Colors.white),
                   ),
                   Text(
