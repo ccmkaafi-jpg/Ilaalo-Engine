@@ -1,4 +1,4 @@
-package com.example.ilaalo_engine
+package com.ilaalo.engine
 
 import io.flutter.embedding.android.FlutterActivity
 
