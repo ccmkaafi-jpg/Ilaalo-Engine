@@ -27,6 +27,9 @@
         </activity>
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+        <service
+            android:name=".services.IlaaloForegroundService"
+            android:exported="false" />
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
