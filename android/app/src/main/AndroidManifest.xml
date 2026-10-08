@@ -1,4 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+
     <application
         android:label="Ilaalo Engine"
         android:name="${applicationName}"
@@ -29,7 +33,12 @@
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <service
             android:name=".services.IlaaloForegroundService"
-            android:exported="false" />
+            android:foregroundServiceType="specialUse"
+            android:exported="false">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Ilaalo Engine background financial automation service" />
+        </service>
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
