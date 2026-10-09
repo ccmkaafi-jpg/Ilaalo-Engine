@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screens/settings_screen.dart';
 import 'services/ilaalo_native_service.dart';
 
 void main() {
@@ -65,6 +66,19 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
         ),
         backgroundColor: const Color(0xFF1E1E1E),
         centerTitle: true,
+        actions: [
+          IconButton(
+            tooltip: 'Settings',
+            icon: const Icon(Icons.settings, color: Colors.white),
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => const SettingsScreen(),
+                ),
+              );
+            },
+          ),
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(24.0),
